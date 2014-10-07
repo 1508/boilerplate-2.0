@@ -1,0 +1,23 @@
+default:
+    - 'imagemin'
+    - 'clean:production'
+    - 'compass:production'
+    - 'requirejs:production'
+    - 'copy:development'
+
+dev:
+    - 'watch'
+
+build:
+    - 'imagemin'
+    - 'compass:development'
+    - 'requirejs:development'
+    - 'copy:fonts'
+
+prototype:
+    - 'clean:prototype'
+    - 'compass:prototype'
+    - 'copy:prototype'
+    - 'preprocess:build'
+    - 'express:prototype'
+    - 'watch'
