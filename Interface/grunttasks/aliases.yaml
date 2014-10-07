@@ -17,7 +17,7 @@ build:
 prototype:
     - 'clean:prototype'
     - 'compass:prototype'
+    - 'compass:prototype2'
     - 'copy:prototype'
     - 'preprocess:build'
     - 'express:prototype'
-    - 'watch'
