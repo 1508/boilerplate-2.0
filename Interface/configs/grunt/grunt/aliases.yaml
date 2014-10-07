@@ -1,0 +1,15 @@
+default:
+    - 'newer:imagemin'
+    - 'clean:production'
+    - 'compass:production'
+    - 'requirejs:production'
+    - 'copy:development'
+  
+dev:
+    - 'watch'
+    
+build:
+    - 'newer:imagemin'
+    - 'compass:development'
+    - 'requirejs:development'
+    - 'copy:fonts'
