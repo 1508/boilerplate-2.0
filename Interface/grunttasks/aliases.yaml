@@ -1,5 +1,4 @@
 default:
-    - 'imagemin'
     - 'clean:production'
     - 'compass:production'
     - 'requirejs:production'
@@ -9,7 +8,6 @@ dev:
     - 'watch'
 
 build:
-    - 'imagemin'
     - 'compass:development'
     - 'requirejs:development'
     - 'copy:fonts'

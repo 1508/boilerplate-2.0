@@ -1,17 +1,20 @@
 module.exports = {
     production: {
         options: {
-            config: '<%= package.configs %>/compass/config-production.rb'
+            basePath: '<%= package.resources %>',
+            cssDir: '<%= package.build %>/css',
+            noLineComments: true,
+            outputStyle: 'compressed',
+            environment: 'production'
         }
     },
     development:{
         options: {
-            config: '<%= package.configs %>/compass/config-development.rb'
-        }
-    },
-    prototype:{
-        options: {
-            config: '<%= package.configs %>/compass/config-prototype.rb'
+            basePath: '<%= package.resources %>',
+            cssDir: '<%= package.build %>/css',
+            noLineComments: true,
+            outputStyle: 'compressed',
+            environment: 'production'
         }
     },
     prototype2:{
@@ -23,6 +26,5 @@ module.exports = {
             outputStyle: 'compressed',
             environment: 'production'
         }
-
     },
 };
