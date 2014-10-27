@@ -1,0 +1,71 @@
+/*
+#Range slider
+*/
+
+/*
+##Basic
+
+    <div class="range-slider" data-slider>
+        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden">
+    </div>
+
+    <div class="range-slider radius" data-slider>
+        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden">
+    </div>
+
+    <div class="range-slider round" data-slider>
+        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden">
+    </div>
+
+    <div class="range-slider disabled" data-slider disabled>
+        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden">
+    </div>
+*/
+
+/*
+##Vertical
+
+    <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden">
+    </div>
+*/
+
+/*
+##With Label
+
+You can use the `display_selector` data option to pass in an element (or input) to display the slider value in.
+
+    <div class="row">
+        <div class="small-10 medium-11 columns">
+            <div class="range-slider" data-slider data-options="display_selector: #sliderOutput3;">
+                <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                <span class="range-slider-active-segment"></span>
+            </div>
+        </div>
+        <div class="small-2 medium-1 columns">
+            <span id="sliderOutput3"></span>
+        </div>
+    </div>
+*/
+
+/*
+##Custom Range
+
+You can create a range slider with custom range by setting the start and end variables in the data-options attribute.
+
+    <div class="range-slider" data-slider data-options="start: 1; end: 10;">
+        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden">
+    </div>
+*/

@@ -1,0 +1,66 @@
+/*
+#Button - standard
+*/
+
+/*
+##Basic
+
+    <a href="#" class="button">Default Button</a>
+*/
+
+.button{
+    padding: $button-med;
+    &.small, &.tiny, &.large{
+        padding: $button-med;
+    }
+}
+
+/*
+##Size classes
+
+    <a href="#" class="button expand">expand</a>
+*/
+
+
+/*
+##Prefix/Postfix
+
+
+    <a href="#" class="button--prefix"><span class="button--prefix__value">prefix</span>Normal Button</a>
+
+    <a href="#" class="button--postfix"><span class="button--postfix__value">postfix</span>Normal Button</a>
+
+*/
+
+
+.button--prefix{
+    @extend .button;
+    padding-left: $button-med;
+    padding-right: $button-med;
+    &__value{
+        border-right: 1px solid $borderColor;
+        float: left;
+        padding-top: $button-med;
+        padding-bottom: $button-med;
+        padding-right: $button-med;
+        margin-top: $button-med*-1;     
+        margin-bottom: $button-med*-1;
+        margin-right: $button-med; 
+    }
+}
+
+.button--postfix{
+    @extend .button;
+    padding-left: $button-med;
+    padding-right: $button-med;
+    &__value{
+        border-left: 1px solid $borderColor;
+        float: right;
+        padding-top: $button-med;
+        padding-bottom: $button-med;
+        padding-left: $button-med;
+        margin-top: $button-med*-1;     
+        margin-bottom: $button-med*-1;
+        margin-left: $button-med; 
+    }
+}

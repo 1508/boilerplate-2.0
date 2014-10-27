@@ -1,0 +1,35 @@
+/*
+#Button - highlight
+*/
+
+/*
+##Basic
+
+    <a href="#" class="button--highlight">Default Button</a>
+*/
+
+.button--highlight{
+    @extend .button;
+    background-color: $white;
+    border:1px solid $borderColor;
+    &:hover{
+        background-color: $white;
+    }
+}
+
+
+/*
+##Size classes
+
+    <a href="#" class="button--highlight">Default Button</a>
+    <a href="#" class="button--highlight expand">Expanded Button</a>
+*/
+
+
+/*
+##Prefix/Postfix
+
+    <a href="#" class="button--highlight button--prefix"><span class="button--prefix__value">prefix</span>Normal Button</a>
+    <a href="#" class="button--highlight button--postfix"><span class="button--postfix__value">postfix</span>Normal Button</a>
+
+*/

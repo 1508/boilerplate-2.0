@@ -1,0 +1,70 @@
+/*
+#Panel
+*/
+
+/*
+##Basic
+    <div class="panel">
+        This is a panel
+    </div>
+*/
+
+.panel{
+    @extend .panel;
+    @extend .clearfix;
+    border-style: none;
+    border-width: 0;
+    background-color:$ghost;
+    color: $fontColor;
+    margin-bottom: $spacer;
+}
+
+/*
+##Basic - Highlight
+
+    <div class="panel--highlight">
+        This is a highlighted panel
+    </div>
+*/
+
+.panel--highlight{
+    @extend .panel;
+    background-color: $ghostDark;
+    color: $fontColorDark;
+}
+
+/*
+##Hero
+    <div class="large-12 columns">
+        <div class="panel--hero">
+            <img class="panel--hero__image" src="http://lorempixel.com/380/180">
+            <div class="panel--hero__content">
+                <h1>Ansøgning om fritidsjagt</h1>
+                <p>Alle der ønsker at gå på jagt, skal have et bevis.</p>
+                <a class="button">Bestil fritidsjagtbevis</a>
+            </div>
+        </div>
+    </div>
+*/
+
+.panel--hero{
+    @extend .panel;
+    padding: 0;
+    &__image{
+        float: left;
+        margin-bottom: $spacer;
+        min-width: 100%;
+        @extend .clearfix;
+    }
+    &__content {
+        padding: $spacer;
+    }
+    .large-12 &{
+        &__image{
+            float: right;
+            margin-bottom: 0;
+            min-width: 50%;
+        }        
+    }
+    
+}

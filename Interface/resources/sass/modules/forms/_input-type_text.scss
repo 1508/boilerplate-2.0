@@ -1,0 +1,159 @@
+/*
+#Input
+*/
+
+/*
+##Basic
+
+    <label>Input Label
+        <input type="text" placeholder="Placeholder text" />
+    </label>
+*/
+
+
+
+/*
+##Inline Labels
+Sometimes you want a form with labels to the left of your inputs. You can put the label inside a different column to the left of the input. Then add a class of `.right` to the label to have it align to the right.
+
+    <div class="row">
+        <div class="small-2 columns">
+            <label for="right-label" class="right">Label</label>
+        </div>
+        <div class="small-10 columns">
+            <input type="text" id="right-label" placeholder="Inline Text Input">
+        </div>
+    </div>
+
+*/
+/*
+Adding a class of `.inline` will have it vertically center against an input. You can use one or both of these classes to accomplish the look you want.
+
+    <div class="row">
+        <div class="small-2 columns">
+            <label for="right-label" class="right inline">Label</label>
+        </div>
+        <div class="small-10 columns">
+            <input type="text" id="right-label" placeholder="Inline Text Input">
+        </div>
+    </div>
+
+*/
+
+
+/*
+##Pre/Postfix Labels & Actions
+Forms support actions tied to buttons, and prefix / postfix labels, through a versatile approach using special grid properties. Essentially you can use `<div class="row collapse">` to create label / action / input combinations. You use the Foundation columns to define the size of the pre/postfix `<span class="postfix">` or `<span class="prefix">`.
+
+
+You can also give a button / input pair a radius or a rounded edge by adding the classes prefix-radius, postfix-radius, prefix-round or postfix-round to the row that contains the elements. For example, `<div class="row collapse postfix-round">` will add a rounded edge to the left side of the input field, and to the right side of the button, creating a cohesive rounded input. Here are a few examples:
+
+    <form>
+      <div class="row collapse">
+        <div class="small-2 large-2 columns">
+          <span class="prefix">http://</span>
+        </div>
+        <div class="small-10 large-10 columns">
+          <input type="text" placeholder="Enter your URL...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row collapse">
+            <div class="small-10 columns">
+              <input type="text" placeholder="Hex Value">
+            </div>
+            <div class="small-2 columns">
+              <a href="#" class="button--input postfix">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="row collapse prefix-radius">
+            <div class="small-2 columns">
+              <span class="prefix">Label</span>
+            </div>
+            <div class="small-10 columns">
+              <input type="text" placeholder="Value">
+            </div>
+          </div>
+        </div>
+        <div class="large-6 columns">
+          <div class="row collapse postfix-radius">
+            <div class="small-10 columns">
+              <input type="text" placeholder="Value">
+            </div>
+            <div class="small-2 columns">
+              <span class="postfix">Label</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+*/
+
+.button--input{
+    @extend .button;
+    &.prefix{
+        border: 1px solid $borderColor;
+        border-right: 0;
+    }
+    &.postfix{
+        border: 1px solid $borderColor;
+        border-left: 0;    
+    }
+}
+
+/*
+##Grid example
+
+Form elements are styled based on their type attribute rather than a class, and can be sized in a couple of ways:
+You can size inputs using column sizes, like .large-6, .small-6.
+
+You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.
+
+    <form>
+        <div class="row">
+            <div class="large-12 columns">
+                <label>Input Label
+                    <input type="text" placeholder="large-12.columns" />
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-2 columns">
+                <label>Input Label
+                    <input type="text" placeholder="large-2.columns" />
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Input Label
+                    <input type="text" placeholder="large-2.columns" />
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Input Label
+                    <input type="text" placeholder="large-2.columns" />
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Input Label
+                    <input type="text" placeholder="large-2.columns" />
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Input Label
+                    <input type="text" placeholder="large-2.columns" />
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Input Label
+                    <input type="text" placeholder="large-2.columns" />
+                </label>
+            </div>
+        </div>
+    </form>
+*/

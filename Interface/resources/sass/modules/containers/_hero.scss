@@ -1,0 +1,65 @@
+/*
+#Hero
+*/
+
+/*
+##Basic
+    <div class="hero">
+        <div class="hero__txt">
+            <img class="hero__icon" src="https://dl.dropboxusercontent.com/u/3130460/icon.png">
+            <p>This is a box with image</p>
+            <p class="hero__boldTxt">And it has awesome buttons:</p>
+        </div>
+        <div class="row">
+            <div class="small-14 large-8 small-centered columns">
+                <div class="small-7 columns">
+                    <a href="#" class="button expand">Expanded Button</a>
+                    <a href="#" class="button expand">Expanded Button</a>
+                </div>
+                <div class="small-7 columns">
+                    <a href="#" class="button expand">Expanded Button</a>
+                    <a href="#" class="button expand">Expanded Button</a>
+                </div>
+            </div>
+        </div>
+        <img class="hero__image" src="http://lorempixel.com/400/200">
+    </div>
+*/
+
+.hero{
+    padding: 0;
+    overflow: hidden; 
+    position: relative;
+    &__image{
+        left: 0;
+        position: absolute;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+    &__icon {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: .8rem;
+    }
+    &__txt {
+        text-align: center;
+        padding: $padding;
+        color: $white;
+    }
+    &__boldTxt{
+        font-weight: $font-weight-bold;
+    }
+    .button.expand {
+        background: white;
+        text-align: left;
+        padding-left: 20px;
+        &:hover{
+            color: $teal;
+        }
+    }
+    .row{
+        
+    }
+}

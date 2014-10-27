@@ -1,0 +1,115 @@
+/*
+#Navigation
+*/
+
+/*
+##Basic
+
+    <nav>
+        <ul class="navigation small-block-grid-3">
+            <li class="navigation__item">
+                <a class="navigation__anchor search" href="#">
+                    Søg her...
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__anchor menu" href="#">
+                    Find emner
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__anchor mypage" href="#">
+                    Min side
+                </a>
+            </li>
+            <li class="navigation__item extra">
+                <a class="navigation__anchor extra__menu" href="#">
+                    -
+                </a>
+            </li>
+        </ul>
+    </nav>
+*/
+
+.navigation{
+    position: relative;
+    overflow: hidden;
+    &__anchor{
+        padding: $spacer;
+        text-decoration: none;
+        width: 100%;
+        float: left;
+        background: $darkPurple;
+        text-indent: -500px;
+        font-size: rem-calc(0);
+        line-height: rem-calc(32);
+        color: $ghost;
+        overflow: hidden;
+        @include transition-property(text-indent);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in);
+        @media #{$medium-up} {
+            padding: $spacer * 2;
+        }
+        &.search{
+            &:after{
+                @include my-icons-sprite(search);
+                content: '';
+                height: 33px;
+                display: inline-block;
+                float: right;
+                @media #{$small-up} {
+                    background-position: center center;
+                    width: 100%;
+                }
+                @media #{$medium-up} {
+                    width: 33px;
+                    background-position: 0 0;
+                }
+            }
+        }      
+        @media #{$medium-up} {
+            font-size: rem-calc(28);
+            text-indent: 0px;
+        }
+    }
+    &__item{
+        position: relative;
+        &:hover, &.active{
+            &:after{
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid $darkPurpleHover;
+                left: 50%;
+                position: absolute;
+                bottom: 1px;
+                margin-left: -20px;
+            }
+            .navigation__anchor{
+                background: $darkPurpleHover;
+                color: $smoke; 
+            }
+        }
+    }
+    &.small-block-grid-3{
+        &.scrolled{
+            @extend .small-block-grid-4;
+            .extra{
+                display: block;
+                opacity: 1;
+                @include transition-property(opacity);
+                @include transition-duration(2s);
+                @include transition-timing-function(ease-in);
+                
+            }
+        }
+    }
+    .extra{
+        opacity: 0;
+        display: none;
+    }
+}
+

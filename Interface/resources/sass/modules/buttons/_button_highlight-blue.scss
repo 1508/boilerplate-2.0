@@ -1,0 +1,69 @@
+/*
+#Button - highlight blue
+*/
+
+/*
+##Basic
+
+    <a href="#" class="button--highlight--blue">Default Button</a>
+*/
+
+.button--highlight--blue{
+    @extend .button--highlight;
+    background: $blue;
+    color: $white;
+    border:1px solid $blue;
+    &:hover{
+        color: $blue;
+        background: $white;
+        border:1px solid $blue;
+    }
+}
+
+
+/*
+##Size classes
+
+    <a href="#" class="button--highlight--blue tiny">Tiny Button</a>
+    <a href="#" class="button--highlight--blue small">Small Button</a>
+    <a href="#" class="button--highlight--blue">Default Button</a>
+    <a href="#" class="button--highlight--blue large">Large Button</a>
+    <a href="#" class="button--highlight--blue expand">Expanded Button</a>
+*/
+
+
+/*
+##Prefix/Postfix
+
+
+    <a href="#" class="button--highlight--blue button--prefix"><span class="button--prefix__value">prefix</span>Normal Button</a>
+
+    <a href="#" class="button--highlight--blue button--postfix"><span class="button--postfix__value">postfix</span>Normal Button</a>
+
+*/
+
+.button--prefix{
+    &.button--highlight--blue{
+        .button--prefix__value{
+            border-right: 1px solid $white;
+        }
+        &:hover{
+            .button--prefix__value{
+                border-color: $blue;
+            }        
+        }
+    }
+}
+
+.button--postfix{
+    &.button--highlight--blue{
+        .button--postfix__value{
+            border-left: 1px solid $white;
+        }
+        &:hover{
+            .button--postfix__value{
+                border-color: $blue;
+            }        
+        }
+    }
+}

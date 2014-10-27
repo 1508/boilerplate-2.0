@@ -1,0 +1,105 @@
+/*
+#Textarea
+*/
+
+/*
+##Basic
+
+    <label>Textarea Label
+        <textarea placeholder="textarea"></textarea>
+    </label>
+*/
+
+
+
+/*
+##Inline Labels
+Sometimes you want a form with labels to the left of your inputs. You can put the label inside a different column to the left of the input. Then add a class of `.right` to the label to have it align to the right.
+
+Adding a class of `.inline` will have it vertically center against an input. You can use one or both of these classes to accomplish the look you want.
+
+    <div class="row">
+        <div class="small-4 columns">
+            <label>Label</label>
+        </div>
+        <div class="small-10 columns">
+            <textarea placeholder="textarea"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-4 columns">
+            <label class="inline">Label</label>
+        </div>
+        <div class="small-10 columns">
+            <textarea placeholder="textarea"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-4 columns">
+            <label class="inline right">Label</label>
+        </div>
+        <div class="small-10 columns">
+            <textarea placeholder="textarea"></textarea>
+        </div>
+    </div>
+
+*/
+
+
+/*
+##Grid examples
+
+Form elements are styled based on their type attribute rather than a class, and can be sized in a couple of ways:
+You can size inputs using column sizes, like .large-6, .small-6.
+
+You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.
+
+    <form>
+        <div class="row">
+            <div class="large-14 columns">
+                <label>Textarea Label
+                    <textarea placeholder="textarea"></textarea>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-2 columns">
+                <label>Textarea Label
+                    <textarea placeholder="textarea"></textarea>
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Textarea Label
+                    <textarea placeholder="textarea"></textarea>
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Textarea Label
+                    <textarea placeholder="textarea"></textarea>
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Textarea Label
+                    <textarea placeholder="textarea"></textarea>
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Textarea Label
+                    <textarea placeholder="textarea"></textarea>
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Textarea Label
+                    <textarea placeholder="textarea"></textarea>
+                </label>
+            </div>
+            <div class="large-2 columns">
+                <label>Textarea Label
+                    <textarea placeholder="textarea"></textarea>
+                </label>
+            </div>
+        </div>
+    </form>
+*/

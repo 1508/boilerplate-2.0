@@ -1,0 +1,59 @@
+/*
+#Accordion - Standard
+*/
+
+/*
+##Basic
+
+    <dl class="accordion" data-accordion="">
+        <dd class="accordion__navigation">
+            <a href="#" class="accordion__link">Accordion 1</a>
+            <div class="accordion__container">
+                <div class="accordion__content">
+                    Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </dd>
+        <dd class="accordion__navigation important">
+            <a href="#" class="accordion__link">Accordion 2</a>
+            <div class="accordion__container">
+                <div class="accordion__content">
+                    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </dd>
+        <dd class="accordion__navigation">
+            <a href="#" class="accordion__link">Accordion 3</a>
+            <div class="accordion__container">
+                <div class="accordion__content">
+                    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </dd>
+    </dl>
+    
+*/
+
+.accordion{
+    &__navigation{
+        border: 1px solid $borderColor;
+        border-bottom: 0;
+        &:last-child{
+            border-bottom: 1px solid $borderColor;
+        }
+    }
+    &__container{
+        overflow: hidden;
+        max-height: 0;
+        @include transition-property(max-height);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in);
+        .important &{
+            max-height: none;
+        }
+    }
+    &__content{
+        padding: $spacer;
+        border-top: 1px solid $borderColor;
+    }
+}

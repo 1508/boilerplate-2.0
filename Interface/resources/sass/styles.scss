@@ -1,6 +1,11 @@
-@import "scaffolding/_foundation",
-		"scaffolding/_normalize";
+@import "compass/css3";
 
-body{
-    color: orange;
-}
+@import "core/settings";
+
+@import "scaffolding/foundation",
+		"scaffolding/normalize";
+
+@import "core/core",
+        "core/sprites";
+
+@import "modules/modules";

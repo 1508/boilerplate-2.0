@@ -1,0 +1,70 @@
+/*
+#Footer
+*/
+
+/*
+##Basic
+
+    <footer>
+        <ul class="footer">
+            <li class="footer__item">
+                <a class="footer__anchor" href="#">
+                    Menu item
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__anchor" href="#">
+                    Menu item
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__anchor" href="#">
+                    Menu item
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__anchor" href="#">
+                    Menu item
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__anchor" href="#">
+                    Menu item
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__anchor" href="#">
+                    Menu item
+                </a>
+            </li>
+        </ul>   
+    </footer>
+*/
+
+
+.footer {
+    //@extend .inline-list;
+    text-align: justify;
+    background: $footerColor;
+    padding: $spacer;
+    padding-bottom: 175px;
+    a { //&__anchor virker ikke...
+        color: $fontColorDark;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+}
+
+.footer {
+    text-align: justify;
+    //min-width: 500px;
+}
+.footer:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.footer li {
+    display: inline-block;
+}
