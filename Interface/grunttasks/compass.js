@@ -11,13 +11,10 @@ module.exports = {
     },
     prototype:{
         options: {
-            config: '<%= package.configs %>/compass/config-prototype.rb'
-        }
-    },
-    prototype2:{
-        options: {
-            config: '<%= package.configs %>/compass/config.rb',
-            basePath: '<%= package.resources %>',
+            basePath: '<%= package.root %>',
+            sassDir: '<%= package.resources %>/sass',
+            imagesDir: '<%= package.resources %>/images',
+            raw: 'Sass::Script::Number.precision = 10\n',
             cssDir: '<%= package.prototype %>/css',
             noLineComments: true,
             outputStyle: 'compressed',
