@@ -1,26 +1,27 @@
-default:
-    - 'imagemin'
-    - 'clean:production'
-    - 'compass:production'
-    - 'requirejs:production'
-    - 'copy:development'
-
-dev:
-    - 'watch'
-
-build:
-    - 'imagemin'
-    - 'compass:development'
-    - 'requirejs:development'
-    - 'copy:fonts'
-
 prototype:
     - 'clean:prototype'
-    - 'compass:prototype'
-    - 'copy:images'
-    - 'copy:js'
-    - 'copy:fonts'
+    - 'copy:prototype'
+    - 'sass:prototype'
     - 'preprocess:build'
     - 'express:prototype'
     - 'open'
-    - 'watch'
+    - 'watchPrototype'
+dev:
+    - 'clean:development'
+    - 'copy:development'
+    - 'requirejs:development'
+    - 'sass:development'
+    - 'watchDevelopment'
+
+build:
+    - 'clean:production'
+    - 'copy:production'
+    - 'imagemin:production'
+    - 'sass:production'
+    - 'requirejs:production'
+
+optimize:
+    - 'imagemin:originals'
+
+default:
+    - 'build'

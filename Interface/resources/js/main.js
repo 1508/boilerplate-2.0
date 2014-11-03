@@ -1,22 +1,19 @@
 requirejs([
-		'jquery'
+		'jquery',
+		'foundation-loader',
+		'module-example'
 		],
 	function($) {
 
-		var onReady, onLoad, onResize, afterResize, timer, cookieHandler;
+		var onReady, onLoad, onResize, afterResize, timer;
 
 		/* Hookups
 		----------------------------*/
-		onReady = function() {	
-            console.log('test');
-            
-		};
-
-		cookieHandler = function(){
+		onReady = function() {	 
+          
 		};
 
 		onLoad = function() {
-
 		};
 
 		onResize = function(){
@@ -37,6 +34,5 @@ requirejs([
         	timer = setTimeout(afterResize, 50);
         });
         
-        $(cookieHandler); //EU cookie restrictions
 	}
 );

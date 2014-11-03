@@ -3,7 +3,8 @@ module.exports = {
 		options: {
 			port: 1508,
 			hostname: "0.0.0.0",
-			bases: ['<%= package.prototype %>']
+			bases: ['<%= package.prototype %>'],
+			livereload: true
 		}
 	}
 };

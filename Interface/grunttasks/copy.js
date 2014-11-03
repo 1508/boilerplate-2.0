@@ -3,43 +3,96 @@ module.exports = {
 		files: [{
 			//Fonts
 			expand: true,
-			cwd: '<%= package.resources %>/',
-			src: 'fonts/*',
-			dest: '<%= package.build %>/fonts'
+			cwd: '<%= package.resources %>/fonts/',
+			src: '**',
+			dest: '<%= package.buildresources %>/fonts'
 		}, {
 			//Javascript
 			expand: true,
-			cwd: '<%= package.resources %>/js/',
-			src: ['standalone/*.js'],
-			dest: '<%= package.build %>/js'
-		}]
-	},
-	js: {
-		files: [{
-			//Javascript
-			expand: true,
-			cwd: '<%= package.resources %>/js/',
-			src: ['*.js'],
-			dest: '<%= package.prototype %>/js'
-		}]
-	},
-	images: {
-		files: [{
+			cwd: '<%= package.resources %>/js/standalone/',
+			src: ['**/*.js'],
+			dest: '<%= package.buildresources %>/js/standalone'
+		}, {
 			//Images
 			expand: true,
 			cwd: '<%= package.resources %>/images/',
-			src: ['*.{png,jpg,gif}'],
-			dest: '<%= package.prototype %>/images'
+			src: ['**/*.{png,jpg,gif,svg}', '!temporary/**'],
+			dest: '<%= package.buildresources %>/images'
+
 		}]
 	},
-	fonts: {
+	prototype: {
 		files: [{
 			//Fonts
 			expand: true,
 			cwd: '<%= package.resources %>/fonts/',
 			src: '**',
-			dest: '<%= package.prototype %>/fonts'
+			dest: '<%= package.prototyperesources %>/fonts'
+		}, {
+			//Javascript
+			expand: true,
+			cwd: '<%= package.resources %>/js/',
+			src: ['**/*.js'],
+			dest: '<%= package.prototyperesources %>/js'
+		}, {
+			//Images
+			expand: true,
+			cwd: '<%= package.resources %>/images/',
+			src: ['**/*.{png,jpg,gif,svg}'],
+			dest: '<%= package.prototyperesources %>/images'
+
 		}]
-	}
+	},
+	production: {
+		files: [{
+			//Fonts
+			expand: true,
+			cwd: '<%= package.resources %>/fonts/',
+			src: '**',
+			dest: '<%= package.buildresources %>/fonts'
+		}, {
+			//Javascript
+			expand: true,
+			cwd: '<%= package.resources %>/js/standalone/',
+			src: ['**/*.js'],
+			dest: '<%= package.buildresources %>/js/standalone'
+		}, {
+			//Images
+			expand: true,
+			cwd: '<%= package.resources %>/images/',
+			src: ['**/*.svg', '!temporary/**'],
+			dest: '<%= package.buildresources %>/images'
+
+		}]
+	},	
+	// js: {
+	// 	files: [{
+	// 		//Javascript
+	// 		expand: true,
+	// 		cwd: '<%= package.resources %>/js/',
+	// 		src: ['**/*.js'],
+	// 		dest: '<%= package.prototyperesources %>/js'
+	// 	}]
+	// },
+
+	// images: {
+	// 	files: [{
+	// 		//Images
+	// 		expand: true,
+	// 		cwd: '<%= package.resources %>/images/',
+	// 		src: ['**/*.{png,jpg,gif,svg}'],
+	// 		dest: '<%= package.prototyperesources %>/images'
+	// 	}]
+	// },
+
+	// fonts: {
+	// 	files: [{
+	// 		//Fonts
+	// 		expand: true,
+	// 		cwd: '<%= package.resources %>/fonts/',
+	// 		src: '**',
+	// 		dest: '<%= package.prototyperesources %>/fonts'
+	// 	}]
+	// }
 
 };

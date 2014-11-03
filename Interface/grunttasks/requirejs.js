@@ -4,10 +4,9 @@ module.exports = {
             name:'almond',
             wrap: true,
             preserveLicenseComments:false,
-            insertRequire: ['main'],
-            baseUrl: "<%= package.resources %>/js/plugins",
+            baseUrl: "<%= package.resources %>/js/modules",
             mainConfigFile: "<%= package.resources %>/js/config.js",
-            out: "<%= package.build %>/js/script.js",
+            out: "<%= package.buildresources %>/js/script.js",
             optimize: "none"
         }    
     },
@@ -16,10 +15,9 @@ module.exports = {
             name:'almond',
             wrap: true,
             preserveLicenseComments:false,
-            insertRequire: ['main'],
-            baseUrl: "<%= package.resources %>/js/plugins",
+            baseUrl: "<%= package.resources %>/js/modules",
             mainConfigFile: "<%= package.resources %>/js/config.js",
-            out: "<%= package.build %>/js/script.js",
+            out: "<%= package.buildresources %>/js/script.js",
             optimize: "uglify2"
         }    
     }

@@ -170,4 +170,4 @@ pip-log.txt
 .sass-cache
 resources/images/my-icons-*.png
 node_modules
-prototype
+_prototype
