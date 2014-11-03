@@ -1,7 +1,21 @@
-// @import "scaffolding/_foundation",
-// 		"scaffolding/_normalize";
 
-body{
-    color: orange;
-	background: red;
-}
+// Foundation Settings
+@import 'core/settings';
+
+// Foundation 
+@import 'scaffolding/normalize';
+@import 'scaffolding/foundation';
+
+// Compass functions
+@import 'compass/functions';
+@import 'compass/utilities';
+@import 'compass/typography';
+@import 'compass/css3';
+
+
+@import 'core/variables';
+
+
+@import 'core/core';
+
+@import 'modules/modules';
