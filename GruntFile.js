@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 
     // load grunt config
     require('load-grunt-config')(grunt, {
+    	jitGrunt: true,
         configPath: path.join(process.cwd(), 'Interface/grunttasks')
     });
 };
