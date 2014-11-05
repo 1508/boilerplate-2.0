@@ -1,6 +1,6 @@
 module.exports = {
     options: {
-        config: '<%= package.configs %>csscomb/csscomb-config.rb'
+        config: '<%= package.configs %>/csscomb/csscomb-config.json'
     },
     test: {
         files: [{
