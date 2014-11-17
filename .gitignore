@@ -171,3 +171,4 @@ pip-log.txt
 resources/images/my-icons-*.png
 node_modules
 _prototype
+/utilities/install.bat
