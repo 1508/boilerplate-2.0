@@ -172,3 +172,4 @@ resources/images/my-icons-*.png
 node_modules
 _prototype
 /utilities/install.bat
+/projectname/*

@@ -7,6 +7,8 @@ module.exports = {
     },
     development: {
         src: ['<%= package.buildresources %>/**'],
+    },
+    staticsite: {
+        src: ['<%= package.staticsite %>/**'],
     }
-
 };

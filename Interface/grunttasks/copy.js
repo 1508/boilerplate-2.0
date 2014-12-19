@@ -64,35 +64,6 @@ module.exports = {
 			dest: '<%= package.buildresources %>/images'
 
 		}]
-	},	
-	// js: {
-	// 	files: [{
-	// 		//Javascript
-	// 		expand: true,
-	// 		cwd: '<%= package.resources %>/js/',
-	// 		src: ['**/*.js'],
-	// 		dest: '<%= package.prototyperesources %>/js'
-	// 	}]
-	// },
-
-	// images: {
-	// 	files: [{
-	// 		//Images
-	// 		expand: true,
-	// 		cwd: '<%= package.resources %>/images/',
-	// 		src: ['**/*.{png,jpg,gif,svg}'],
-	// 		dest: '<%= package.prototyperesources %>/images'
-	// 	}]
-	// },
-
-	// fonts: {
-	// 	files: [{
-	// 		//Fonts
-	// 		expand: true,
-	// 		cwd: '<%= package.resources %>/fonts/',
-	// 		src: '**',
-	// 		dest: '<%= package.prototyperesources %>/fonts'
-	// 	}]
-	// }
+	},
 
 };

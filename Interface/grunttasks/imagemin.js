@@ -1,7 +1,4 @@
 module.exports = {
-    options: {
-        config: '<%= package.configs %>csscomb/csscomb-config.rb'
-    },
     production: {
         files: [{
             expand: true,

@@ -20,6 +20,6 @@ module.exports = {
             out: "<%= package.buildresources %>/js/script.js",
             optimize: "uglify2"
         }    
-    }
+    } 
 };
 

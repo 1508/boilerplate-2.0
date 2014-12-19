@@ -29,4 +29,5 @@ module.exports = {
             '<%= package.buildresources %>/css/styles.css': '<%= package.resources %>/sass/styles.scss'
         }
     }
+
 };

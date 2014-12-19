@@ -2,7 +2,7 @@ prototype:
     - 'clean:prototype'
     - 'copy:prototype'
     - 'sass:prototype'
-    - 'preprocess:build'
+    - 'preprocess:prototype'
     - 'express:prototype'
     - 'open'
     - 'watchPrototype'
@@ -22,6 +22,18 @@ build:
 
 optimize:
     - 'imagemin:originals'
+
+staticsite:
+    - 'clean:production'
+    - 'copy:production'
+    - 'imagemin:production'
+    - 'sass:production'
+    - 'requirejs:production'
+    - 'preprocess:production'
+    - 'processhtml:production'
+    - 'express:staticsite'
+    - 'open'
+    - 'express-keepalive'
 
 default:
     - 'build'
