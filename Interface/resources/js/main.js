@@ -1,38 +1,36 @@
+/*globals requirejs:false, window:false */
+
 requirejs([
-		'jquery',
-		'foundation-loader',
-		'module-example'
-		],
-	function($) {
+    'jquery',
+    'foundation-loader',
+    'module-example'
+], function ($) {
+    'use strict';
 
-		var onReady, onLoad, onResize, afterResize, timer;
+    var onReady, onResize, afterResize, timer;
 
-		/* Hookups
-		----------------------------*/
-		onReady = function() {	 
-          
-		};
+    /* Hookups
+    ----------------------------*/
+    onReady = function () {
+        //
+    };
 
-		onLoad = function() {
-		};
+    onResize = function () {
+        //
+    };
 
-		onResize = function(){
-
-		};
-
-		afterResize = function(){
-		};
+    afterResize = function () {
+        //
+    };
 
 
-		/* Attach events
-        ----------------------------*/
-        $(onReady);//Document ready
-        $(window).load(onLoad); //Window load
-        $(window).resize(function(e){
-        	onResize();
-        	clearTimeout(timer);
-        	timer = setTimeout(afterResize, 50);
-        });
-        
-	}
-);
+    /* Attach events
+    ----------------------------*/
+    $(onReady); //Document ready
+    $(window).resize(function () {
+        onResize();
+        clearTimeout(timer);
+        timer = setTimeout(afterResize, 50);
+    });
+
+});
