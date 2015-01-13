@@ -1,6 +1,8 @@
+/*global define:false, Modernizr:false */
+
 define([
-	'jquery', 
-	'foundation',
+    'jquery',
+    'foundation',
     // 'foundation.abide',
     // 'foundation.accordion',
     // 'foundation.alert',
@@ -18,10 +20,12 @@ define([
     // 'foundation.tooltip',
     // 'foundation.topbar'
 
-	], function($){
-	console.log('foundation loader module is loaded');
+], function ($) {
+    'use strict';
 
-	// bootstrap foundation
-	$(document).foundation();
+    console.log('foundation loader module is loaded');
+
+    // bootstrap foundation
+    $(document).foundation();
 
 });

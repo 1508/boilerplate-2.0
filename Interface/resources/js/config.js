@@ -1,3 +1,5 @@
+/*globals requirejs:false */
+
 requirejs.config({
     baseUrl: '/resources/js/modules',
     paths: {
@@ -7,6 +9,9 @@ requirejs.config({
         'jquery'            : '../libs/jquery-1.8.3.min',
         'selectivizr'       : '../libs/selectivizr-min',
         'jquery.cookie'            : '../libs/jquery.cookie',
+
+        //Plugins
+        'mouse-detect'            : '../plugins/mouse-detect',
 
         // Foundation
         'foundation': '../libs/foundation',
@@ -25,7 +30,7 @@ requirejs.config({
         'foundation.slider': '../libs/foundation/foundation.slider',
         'foundation.tab': '../libs/foundation/foundation.tab',
         'foundation.tooltip': '../libs/foundation/foundation.tooltip',
-        'foundation.topbar': '../libs/foundation/foundation.topbar'        
+        'foundation.topbar': '../libs/foundation/foundation.topbar'
     },
     shim: {
         'foundation': ['jquery'],
@@ -46,5 +51,5 @@ requirejs.config({
         'foundation.tooltip': ['foundation'],
         'foundation.topbar': ['foundation']
     },
-    deps: ['main', 'selectivizr']
+    deps: ['main', 'selectivizr', 'mouse-detect']
 });
