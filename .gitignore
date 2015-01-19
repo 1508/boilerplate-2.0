@@ -173,3 +173,4 @@ node_modules
 _prototype
 /utilities/install.bat
 /projectname/*
+/remove node_modules.cmd
