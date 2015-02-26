@@ -15,10 +15,16 @@ module.exports = function(grunt) {
 				files: ['<%= package.resources %>/sass/**/*.scss'],
 				tasks: ['newer:csscomb', 'sass:prototype'],
 				options: {
-					livereload: true
+					livereload: false
 				},
 			},
-
+            css: {
+                files: ['<%= package.prototyperesources %>/css/styles.css'],
+                tasks: [],
+                options: {
+                    livereload: true
+                }
+            },
 			js: {
 				files: ['<%= package.resources %>/js/**/*.js'],
 				tasks: ['newer:copy:prototype'],

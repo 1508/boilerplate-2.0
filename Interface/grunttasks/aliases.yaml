@@ -2,6 +2,7 @@ prototype:
     - 'clean:prototype'
     - 'copy:prototype'
     - 'sass:prototype'
+    - 'autoprefixer:prototype'
     - 'preprocess:prototype'
     - 'express:prototype'
     - 'open'
