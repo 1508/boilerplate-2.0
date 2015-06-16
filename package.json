@@ -1,6 +1,7 @@
 {
   "name": "1508-boilerplate",
   "version": "0.2.0",
+  "private": true,
   "siteName": "projectname",
   "root": ".",
   "build": "projectname",
