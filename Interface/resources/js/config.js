@@ -14,7 +14,7 @@ requirejs.config({
         'mouse-detect'            : '../plugins/mouse-detect',
 
         // Foundation
-        'foundation': '../libs/foundation',
+        'foundation': '../libs/foundation/foundation',
         'foundation.abide': '../libs/foundation/foundation.abide',
         'foundation.accordion': '../libs/foundation/foundation.accordion',
         'foundation.alert': '../libs/foundation/foundation.alert',
