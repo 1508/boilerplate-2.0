@@ -4,7 +4,7 @@
   Foundation.libs.equalizer = {
     name : 'equalizer',
 
-    version : '{{VERSION}}',
+    version : '5.5.2',
 
     settings : {
       use_tallest : true,
@@ -39,7 +39,7 @@
       else {
         vals = group ? equalizer.find('['+this.attr_name()+'-watch="'+group+'"]:visible') : equalizer.find('['+this.attr_name()+'-watch]:visible');
       }
-      
+
       if (vals.length === 0) {
         return;
       }
