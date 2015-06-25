@@ -19,6 +19,7 @@ build:
     - 'copy:production'
     - 'imagemin:production'
     - 'sass:production'
+    - 'autoprefixer:production'
     - 'requirejs:production'
 
 optimize:
