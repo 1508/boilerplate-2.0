@@ -12,6 +12,7 @@ dev:
     - 'copy:development'
     - 'requirejs:development'
     - 'sass:development'
+    - 'autoprefixer:production'
     - 'watchDevelopment'
 
 build:
