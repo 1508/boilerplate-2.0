@@ -6,7 +6,7 @@ requirejs.config({
         'main'              : '../main',
         'almond'            : '../libs/almond.0.2.5',
         //Libs
-        'jquery'            : '../libs/jquery-1.8.3.min',
+        'jquery'            : '../libs/jquery-1.11.3.min',
         'selectivizr'       : '../libs/selectivizr-min',
         'jquery.cookie'            : '../libs/jquery.cookie',
 
@@ -14,7 +14,7 @@ requirejs.config({
         'mouse-detect'            : '../plugins/mouse-detect',
 
         // Foundation
-        'foundation': '../libs/foundation',
+        'foundation': '../libs/foundation/foundation',
         'foundation.abide': '../libs/foundation/foundation.abide',
         'foundation.accordion': '../libs/foundation/foundation.accordion',
         'foundation.alert': '../libs/foundation/foundation.alert',
