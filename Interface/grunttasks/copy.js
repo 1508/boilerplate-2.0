@@ -60,7 +60,7 @@ module.exports = {
 			//Images
 			expand: true,
 			cwd: '<%= package.resources %>/images/',
-			src: ['**/*.svg', '!temporary/**'],
+			src: ['**/*.{png,jpg,gif,svg}', '!temporary/**'],
 			dest: '<%= package.buildresources %>/images'
 
 		}]
